@@ -63,6 +63,19 @@ nav a:hover {
     background-color: #ffff;
 }
 
+.page-header {
+    background-color: #d3d3d3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 2px;
+}
+
 /* home */
 .hero {
     background-image: url('images/hero-img.jpg');
@@ -170,6 +183,8 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
+
+/* footer */
 footer {
     background-color: #a8d5d5;
     padding: 40px 20px;
