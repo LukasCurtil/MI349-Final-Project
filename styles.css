@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 .page-header {
-    background-color: #d3d3d3;
+    background-color: #dddddd;
     padding: 60px 20px;
     text-align: center;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
@@ -571,7 +571,7 @@ nav a:hover {
 }
 
 /* Modal overlay */
-.tip-modal {
+.modal {
     display: none; /* hidden by default */
     position: fixed;
     z-index: 2000;
@@ -585,8 +585,9 @@ nav a:hover {
 }
 
 /* Modal content */
-.tip-modal-content {
+.modal-content {
     background-color: #e8f6f6;
+    border: 15px solid #8fc5c5;
     border-radius: 30px;
     margin: 10% auto;
     padding: 50px 40px;
@@ -596,19 +597,19 @@ nav a:hover {
     position: relative;
 }
 
-.tip-modal-content h2 {
+.modal-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.tip-modal-content p {
+.modal-content p {
     font-size: 1.3rem;
     line-height: 1.6;
     margin-bottom: 40px;
 }
 
-.tip-modal-content button {
+.modal-content button {
     font-family: 'Montserrat', sans-serif;
     background-color: #a8d5d5;
     color: #333;
@@ -622,7 +623,7 @@ nav a:hover {
     transition: all 0.3s;
 }
 
-.tip-modal-content button:hover {
+.modal-content button:hover {
     background-color: #8fc5c5;
     color: #fff;
     transform: translateY(-2px);
