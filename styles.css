@@ -129,6 +129,7 @@ nav a:hover {
     display: inline-block;
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: 0 12px 10px rgba(0,0,0,0.15);
 }
 
 .what-i-offer {
@@ -463,6 +464,7 @@ nav a:hover {
 .contact-form textarea {
     border-radius: 35px;
     padding: 20px;
+    resize: none;
 }
 
 .contact-form select {
@@ -629,6 +631,18 @@ nav a:hover {
     opacity: 0.3;
     box-shadow: 0 0 12px rgba(164, 225, 225, 0.6);
     transition: opacity 0.05s ease, transform 0.05s ease;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.bpm-dial input::-webkit-outer-spin-button,
+.bpm-dial input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.bpm-dial input[type=number] {
+    -moz-appearance: textfield;
 }
 
 /* Modal overlay */
