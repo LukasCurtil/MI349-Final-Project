@@ -457,6 +457,7 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     background-color: #ffff;
+    color: #6c6c6c;
 }
 
 .contact-form textarea {
@@ -487,6 +488,9 @@ nav a:hover {
 }
 
 .other-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #333;
     padding: 40px;
     border-radius: 10px;
