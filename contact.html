@@ -32,7 +32,7 @@
             <img src="svgs/arrow-down-solid-full.svg" alt="Down Arrow">
         </div>
 
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contactForm">
             <input type="text" placeholder="FULL NAME" required>
             <input type="email" placeholder="EMAIL ADDRESS" required>
             <select required>
@@ -61,6 +61,16 @@
         <p>I typically respond to all inquiries within 24 to 72 hours. If you're reaching out on a weekend, I'll get back to you by Monday evening.</p>
     </div>
 
+    <div id="submitModal" class="tip-modal">
+        <div class="tip-modal-content">
+            <span class="close-submit-modal">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your message has been successfully sent. I'll get back to you within 24-72 hours!</p>
+            <button id="closeSubmitBtn">Close</button>
+        </div>
+    </div>
+
+
     <footer>
         <div class="footer-logo">
             <span class="footer-text">DRUMLINE</span>
@@ -69,6 +79,6 @@
         </div>
         <p class="copyright">Copyright © 2025 Lukas Curtil</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/form-alert.js"></script>
 </body>
 </html>

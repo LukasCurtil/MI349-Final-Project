@@ -209,6 +209,7 @@ nav a:hover {
     display: block;
     border-radius: 15px;
     object-fit: cover;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .image-caption {
@@ -237,6 +238,7 @@ nav a:hover {
     border: 2px solid #333;
     padding: 50px;
     border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .journey-header {
@@ -309,7 +311,7 @@ nav a:hover {
 
 .lesson-card {
     background-color: #ffff;
-    border: 6px solid #a8d5d5;
+    border: 10px solid #a8d5d5;
     border-radius: 30px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -435,6 +437,7 @@ nav a:hover {
     display: flex;
     gap: 40px;
     text-align: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .other-contact h3 {
@@ -465,6 +468,215 @@ nav a:hover {
 .submit-button:hover {
     background-color: #8fc5c5;
     color: #ffff;
+    transform: translateY(-2px);
+}
+
+/* metronome */
+.metronome-section {
+    background: #ffff;
+    border: 2px solid #313131;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 60px 60px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.metronome-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    color: #313131;
+}
+
+.metronome-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.metronome-section button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bpm-dial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bpm-dial label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.bpm-dial input {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    text-align: center;
+    border: 4px solid #a8d5d5;
+    border-radius: 50%;
+    background-color: #ffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bpm-dial input:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+#startStop {
+    background-color: #a8d5d5;
+    color: #313131;
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s;
+}
+
+#startStop:hover {
+    background-color: #8fc5c5;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.beat-indicator {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #9fd1d1;
+    opacity: 0.3;
+    box-shadow: 0 0 12px rgba(164, 225, 225, 0.6);
+    transition: opacity 0.05s ease, transform 0.05s ease;
+}
+
+/* Modal overlay */
+.tip-modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Modal content */
+.tip-modal-content {
+    background-color: #e8f6f6;
+    border-radius: 30px;
+    margin: 10% auto;
+    padding: 50px 40px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.tip-modal-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.tip-modal-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.tip-modal-content button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #a8d5d5;
+    color: #333;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.tip-modal-content button:hover {
+    background-color: #8fc5c5;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Close button */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #8fc5c5;
+}
+
+/* Close button for submit modal */
+.close-submit-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-submit-modal:hover {
+    color: #a8d5d5;
+}
+
+/* Close button */
+#closeSubmitBtn {
+    background-color: #a8d5d5;
+    color: #333;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+#closeSubmitBtn:hover {
+    background-color: #8fc5c5;
+    color: #fff;
     transform: translateY(-2px);
 }
 
