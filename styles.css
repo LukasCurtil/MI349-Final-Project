@@ -28,6 +28,7 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
 }
 
 nav {
@@ -162,6 +163,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s;
+    box-shadow: 0 12px 10px rgba(0,0,0,0.15);
 }
 
 .feature-card h3 {
@@ -322,7 +324,7 @@ nav a:hover {
 }
 
 .lesson-card h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     font-weight: 700;
     text-decoration: underline;
@@ -358,6 +360,57 @@ nav a:hover {
 
 .lesson-card:hover {
     transform: translateY(-5px);
+}
+
+/* dropdown */
+.lesson-details {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease, padding 0.5s ease, border 0.3s ease;
+	background: #f9f9f9;
+	padding: 0 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.lesson-card.active .lesson-details {
+	max-height: 500px;
+	padding: 20px 40px; 
+	border: 1px solid #313131;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1)
+}
+
+
+.learn-more-btn {
+    font-family: 'Montserrat', sans-serif;
+	background-color: #a8d5d5;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 16px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1)
+}
+
+.learn-more-btn:hover {
+	background-color: #8fc5c5;
+}
+
+.request-lesson-btn {
+	display: inline-block;
+	margin-top: 10px;
+	background-color: #a8d5d5;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 5px;
+	text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1)
+}
+
+.request-lesson-btn:hover {
+	background-color: #8fc5c5;
 }
 
 /* contact */
