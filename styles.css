@@ -164,7 +164,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s;
-    box-shadow: 0 12px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 10px rgba(168, 213, 213, 0.7);
 }
 
 .feature-card h3 {
@@ -189,6 +189,127 @@ nav a:hover {
 
 .feature-card:hover {
     transform: translateY(-20px);
+}
+
+/* Why Choose Section */
+.why-choose {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.why-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.why-item {
+    background-color: #ffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.why-item:hover {
+    transform: translateY(-10px);
+}
+
+.why-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #a8d5d5;
+    margin-bottom: 20px;
+}
+
+.why-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.why-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.testimonial-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border: 10px solid #a8d5d5;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.04);
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #313131;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #f5f5f5;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #313131;
+}
+
+.cta-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #333;
 }
 
 /* about */
@@ -290,7 +411,6 @@ nav a:hover {
     margin-top: 80px;
     padding: 80px 50px;
     background-color: #f4f4f4;
-    border-block: 1px solid #313131;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -481,7 +601,6 @@ nav a:hover {
     box-shadow: 4px 4px 8px rgba(0,0,0,0.1)
 }
 
-
 .learn-more-btn {
     font-family: 'Montserrat', sans-serif;
 	background-color: #a8d5d5;
@@ -513,6 +632,183 @@ nav a:hover {
 .request-lesson-btn:hover {
 	background-color: #8fc5c5;
 }
+
+/* Lesson Benefits Section */
+.lesson-benefits {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.lesson-benefits h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    background-color: #ffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 3px solid #a8d5d5;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    border-color: #8fc5c5;
+}
+
+.benefit-item h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #313131;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Lesson Format Section */
+.lesson-format {
+    background-color: #ffff;
+    padding: 80px 20px;
+}
+
+.format-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.format-content h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.format-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.step-item {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.step-item:hover {
+    transform: translateX(10px);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #a8d5d5;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    border-radius: 50%;
+    border: 3px solid #a8d5d5;
+    flex-shrink: 0;
+}
+
+.step-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #313131;
+}
+
+.step-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: right;
+}
+
+/* Success Stories Section */
+.success-stories {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: #313131;
+}
+
+.stories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.story-card {
+    background-color: #ffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+}
+
+.story-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #313131;
+    border-bottom: 3px solid #a8d5d5;
+    padding-bottom: 10px;
+}
+
+.story-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.story-highlight {
+    font-style: italic;
+    font-weight: 600;
+    color: #313131;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #e8e8e8;
+}
+
 
 /* contact */
 .contact-content {
@@ -637,7 +933,7 @@ nav a:hover {
 /* FAQ Section */
 .faq-section {
     max-width: 1000px;
-    margin: 80px auto;
+    margin: 50px auto;
     padding: 40px 20px;
     background-color: #f9f9f9;
     border-radius: 15px;
@@ -664,6 +960,7 @@ nav a:hover {
     border-radius: 10px;
     border-left: 5px solid #a8d5d5;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s;
 }
 
 .faq-item h3 {
@@ -677,6 +974,10 @@ nav a:hover {
     font-size: 1rem;
     line-height: 1.7;
     color: #333;
+}
+
+.faq-item:hover {
+    transform: scale(1.01);
 }
 
 /* Availability Section */
@@ -738,20 +1039,90 @@ nav a:hover {
     color: #333;
 }
 
-/* metronome */
+/* Metronome Wrapper */
+.metronome-wrapper {
+    background-color: #ffff;
+    padding: 80px 20px;
+}
+
+.metronome-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.metronome-info {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.metronome-info h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #313131;
+}
+
+.metronome-info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.metronome-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.metronome-info li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+    color: #333;
+}
+
+.metronome-info li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+    color: #a8d5d5;
+    transform: translateY(-15px);
+}
+
+.metronome-tip {
+    background-color: #e8f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #a8d5d5;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.metronome-tip strong {
+    color: #313131;
+}
+
+/* metronome tool - updated to work within flexbox */
 .metronome-section {
-    background: #ffff;
+    background: #f9f9f9;
     border: 2px solid #313131;
     border-radius: 20px;
-    max-width: 600px;
-    margin: 80px auto;
-    padding: 60px 60px;
+    flex: 0 0 400px;
+    padding: 40px;
     text-align: center;
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     font-family: 'Montserrat', sans-serif;
     color: #333;
     position: relative;
     overflow: hidden;
+    margin: 0; /* Override any previous margin */
 }
 
 .metronome-section h2 {
@@ -841,6 +1212,32 @@ nav a:hover {
 .bpm-dial input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+/* Responsive adjustments for metronome */
+@media (max-width: 968px) {
+    .metronome-container {
+        flex-direction: column;
+    }
+
+    .metronome-section {
+        flex: 1;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .metronome-info h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .metronome-info {
+        text-align: center;
+    }
+
+    .metronome-info li {
+        text-align: left;
+    }
 }
 
 /* Modal overlay */
