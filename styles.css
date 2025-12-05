@@ -292,6 +292,7 @@ nav a:hover {
     color: #313131;
 }
 
+
 /* CTA Section */
 .cta-section {
     background-color: #f5f5f5;
@@ -883,6 +884,7 @@ nav a:hover {
     cursor: pointer;
     transition: all 0.3s;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 }
 
 .other-contact {
@@ -1370,6 +1372,11 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: all 0.3s;
   padding: 8px;
+}
+
+#backToTop img {
+    width: 24px;
+    height: 24px;
 }
 
 #backToTop:hover {
