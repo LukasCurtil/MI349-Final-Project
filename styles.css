@@ -64,9 +64,55 @@ nav a:hover {
     background-color: #ffff;
 }
 
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    nav ul {
+        gap: 40px; /* reduce gap */
+    }
+    nav a {
+        font-size: 1.1rem; /* slightly smaller text */
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap; /* allow wrapping if needed */
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        gap: 10px;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+    .logo {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+
+/* headers */
 .page-header {
     background-color: #dddddd;
-    padding: 60px 20px;
+    padding: 55px 20px;
     text-align: center;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
 }
@@ -77,10 +123,33 @@ nav a:hover {
     color: #333;
     letter-spacing: 2px;
 }
+@media (max-width: 900px) {
+    .page-header h1 {
+        font-size: 2.7rem;
+    }
+    .page-header {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    .page-header {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+}
 
 /* home */
 .hero {
-    background-image: url('images/hero-img.jpg');
+    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 600px;
