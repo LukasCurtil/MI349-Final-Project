@@ -64,13 +64,12 @@ nav a:hover {
     background-color: #ffff;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
     nav ul {
-        gap: 40px; /* reduce gap */
+        gap: 40px;
     }
     nav a {
-        font-size: 1.1rem; /* slightly smaller text */
+        font-size: 1.1rem;
     }
     .logo {
         width: 50px;
@@ -82,7 +81,7 @@ nav a:hover {
 @media (max-width: 600px) {
     nav ul {
         gap: 20px;
-        flex-wrap: wrap; /* allow wrapping if needed */
+        flex-wrap: wrap;
     }
     nav a {
         font-size: 0.9rem;
@@ -289,7 +288,7 @@ nav a:hover {
     transform: translateY(-20px);
 }
 
-/* Why Choose Section */
+/* why */
 .why-choose {
     background-color: #f5f5f5;
     padding: 80px 20px;
@@ -342,7 +341,6 @@ nav a:hover {
     color: #333;
 }
 
-/* Testimonials Section */
 .testimonials {
     background-color: #ffff;
     padding: 80px 20px;
@@ -390,8 +388,6 @@ nav a:hover {
     color: #313131;
 }
 
-
-/* CTA Section */
 .cta-section {
     background-color: #f5f5f5;
     padding: 100px 20px;
@@ -542,7 +538,6 @@ nav a:hover {
     }
 }
 
-/* Teaching Philosophy Section */
 .teaching-philosophy {
     margin-top: 80px;
     padding: 80px 50px;
@@ -589,7 +584,7 @@ nav a:hover {
     color: #333;
 }
 
-/* Credentials Section */
+/* creds */
 .credentials {
     padding: 80px 50px;
     background-color: #ffff;
@@ -780,7 +775,6 @@ nav a:hover {
     }
 }
 
-/* Lesson Benefits Section */
 .lesson-benefits {
     background-color: #f5f5f5;
     padding: 80px 20px;
@@ -828,7 +822,6 @@ nav a:hover {
     color: #333;
 }
 
-/* Lesson Format Section */
 .lesson-format {
     background-color: #ffff;
     padding: 80px 20px;
@@ -913,8 +906,6 @@ nav a:hover {
     }
 }
 
-
-/* Success Stories Section */
 .success-stories {
     background-color: #ffff;
     padding: 80px 20px;
@@ -973,7 +964,6 @@ nav a:hover {
     padding-top: 15px;
     border-top: 2px solid #e8e8e8;
 }
-
 
 /* contact */
 .contact-content {
@@ -1109,7 +1099,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* FAQ Section */
+/* FAQ */
 .faq-section {
     max-width: 1000px;
     margin: 50px auto;
@@ -1159,7 +1149,6 @@ nav a:hover {
     transform: scale(1.01);
 }
 
-/* Availability Section */
 .availability-section {
     max-width: 1000px;
     margin: 0 auto 80px auto;
@@ -1218,7 +1207,7 @@ nav a:hover {
     color: #333;
 }
 
-/* Metronome Wrapper */
+/* met wrap */
 .metronome-wrapper {
     background-color: #f5f5f5;
     padding: 80px 20px;
@@ -1288,7 +1277,7 @@ nav a:hover {
     color: #313131;
 }
 
-/* metronome tool - updated to work within flexbox */
+/* metronome */
 .metronome-section {
     background: #f9f9f9;
     border: 2px solid #313131;
@@ -1301,7 +1290,7 @@ nav a:hover {
     color: #333;
     position: relative;
     overflow: hidden;
-    margin: 0; /* Override any previous margin */
+    margin: 0;
 }
 
 .metronome-section h2 {
@@ -1393,7 +1382,6 @@ nav a:hover {
     margin: 0;
 }
 
-/* Responsive adjustments for metronome */
 @media (max-width: 968px) {
     .metronome-container {
         flex-direction: column;
@@ -1419,9 +1407,9 @@ nav a:hover {
     }
 }
 
-/* Modal overlay */
+/* modal */
 .modal {
-    display: none; /* hidden by default */
+    display: none;
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -1433,7 +1421,6 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Modal content */
 .modal-content {
     background-color: #e8f6f6;
     border: 15px solid #8fc5c5;
@@ -1478,7 +1465,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Close button */
+/* close button */
 .close-modal {
     position: absolute;
     top: 15px;
@@ -1494,7 +1481,6 @@ nav a:hover {
     color: #8fc5c5;
 }
 
-/* Close button for submit modal */
 .close-submit-modal {
     position: absolute;
     top: 15px;
@@ -1510,7 +1496,7 @@ nav a:hover {
     color: #a8d5d5;
 }
 
-/* Close button */
+/* close button */
 #closeSubmitBtn {
     background-color: #a8d5d5;
     color: #333;
@@ -1543,7 +1529,7 @@ nav a:hover {
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  display: none; /* Hidden until scrolling */
+  display: none;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -1560,7 +1546,6 @@ nav a:hover {
   background: #dbdbdb;
   transform: scale(1.2);
 }
-
 
 /* footer */
 footer {
