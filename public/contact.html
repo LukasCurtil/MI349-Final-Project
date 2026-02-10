@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumline Basics - CONTACT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon_final.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="lessons.html">LESSONS</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="index.html"><div class="logo">DB</div></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>- CONTACT ME -</h1>
+    </section>
+
+    <section class="contact-content">
+        <h2 class="contact-heading">Get in Touch!</h2>
+        <p class="contact-intro">
+            Have questions, want to schedule a lesson, or just want to learn more? 
+            I'm here to help! Fill out the form below, or use the direct contact information to reach out.
+        </p>
+
+        <div class="arrow">
+            <img src="svgs/arrow-down-solid-full.svg" alt="Down Arrow">
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="FULL NAME" required>
+            <input type="email" placeholder="EMAIL ADDRESS" required>
+            <select required>
+                <option value="">SKILL LEVEL - SELECT OPTION</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <textarea placeholder="MESSAGE - Let me know if you are wanting to schedule a lesson, have any questions, or anything else I can help with!" rows="6" required></textarea>
+            <button type="submit" class="submit-button">SUBMIT</button>
+        </form>
+
+        <div class="other-contact">
+            <h3>Other ways<br>to reach me:</h3>
+            <div class="contact-info">
+                <p>Instagram: @lukasc.11</p>
+                <p>Phone: (248) 238-6487</p>
+                <p>Email: lukas@curtil.me</p>
+                <p class="social-note">Feel free to reach out via social<br>media for a quicker response!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="response-time">
+        <h2>Response Time</h2>
+        <p>I typically respond to all emails and messages within 24 to 72 hours. If you're reaching out on a weekend, I'll get back to you by Monday evening.</p>
+    </section>
+
+    <section class="faq-section">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>How long are the lessons?</h3>
+                <p>A standard lesson is either 30 or 60 minutes and are both availble per your request. We can also dicuss what works best for you during our first meeting. Custom times can also be discussed.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are your rates?</h3>
+                <p>Lesson rates vary depending on session length and frequency. Contact me for current pricing and package options. I do offer discounts for students who book multiple lessons in advance.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer online lessons?</h3>
+                <p>Yes! I offer both in person and online lessons via zoom call. Online lessons include the same quality of instruction with video feedback and personalized practice materials.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What should I bring to my first lesson?</h3>
+                <p>Bring your sticks, a practice pad if you have one, and any music you're currently working on. Most importantly, bring your questions and enthusiasm to learn!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="availability-section">
+        <h2>LESSON AVAILABILITY</h2>
+        <div class="availability-content">
+            <p>I currently offer lessons during the following times:</p>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <h3>Weekdays</h3>
+                    <p>2:00 PM - 5:00 PM</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>Saturdays</h3>
+                    <p>10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>Sundays</h3>
+                    <p>12:00 PM - 5:00 PM</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>Wednesdays</h3>
+                    <p>2:00 PM - 8:00 PM</p>
+                </div>
+            </div>
+            <p class="schedule-note">Times are flexible based on your needs. Contact me to find a time that works for both of us!</p>
+        </div>
+    </section>
+
+    <form id="bookingForm">
+        <input id="name" placeholder="Name" />
+        <input id="email" placeholder="Email" />
+        <input id="date" type="date" />
+        <input id="time" type="time" />
+        <select id="lessonType">
+            <option>Marching Snare</option>
+            <option>Drumline</option>
+        </select>
+        <button type="submit">Book</button>
+    </form>
+
+
+    <footer>
+        <div class="footer-logo">
+            <span class="footer-text">DRUMLINE</span>
+            <div class="logo">DB</div>
+            <span class="footer-text">BASICS</span>
+        </div>
+        <p class="copyright">Copyright © 2025 Lukas Curtil</p>
+    </footer>
+
+    <button id="backToTop">
+          <img src="svgs/angle-up-solid-full.svg" alt="Back to top">
+    </button>
+
+    <div id="submitModal" class="modal">
+        <div class="modal-content">
+            <span class="close-submit-modal">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your message has been successfully sent. I'll get back to you within 24-72 hours!</p>
+            <button id="closeSubmitBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts/form-alert.js"></script>
+    <script src="scripts/btt.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
